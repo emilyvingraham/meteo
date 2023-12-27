@@ -1,21 +1,21 @@
 body {
-  background-color: #f0ece5;
-  font-family: 'PT Sans', sans-serif;
+  background-color: #ecf9ff;
+  font-family: 'Roboto', sans-serif;
 }
 .enter-a-city {
   border-radius: 10px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  width: 80%;
+  width: 70%;
   padding: 20px;
 }
 .search-a-city {
-  background-color: #161a30;
+  background-color: #3c486b;
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
-  color: #f0ece5;
+  color: #ecf9ff;
   cursor: pointer;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   margin: 10px;
   padding: 20px;
@@ -30,13 +30,22 @@ body {
   text-align: center;
 }
 .container {
-  background-color: #b6bbc4;
+  background-color: #b7cadb;
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   display: block;
   margin: 0 auto;
   padding: 50px;
   width: 75%;
+}
+.current-detail-container {
+  background-color: #3c486b;
+  border-radius: 10px;
+  color: #f0f0f0;
+  height: 30%;
+  justify-content: left;
+  padding: 10px;
+  width: 20%;
 }
 a {
   color: #161a30;
@@ -45,7 +54,7 @@ a {
   display: flex;
   position: relative;
   padding-top: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .current-temperature {
@@ -61,6 +70,17 @@ a {
   bottom: 20px;
 }
 .forecast {
+  background-color: #3c486b;
+  border-radius: 10px;
+  color: #f0f0f0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 86%;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer {
+  text-align: center;
+  position: relative;
+  top: 20px;
 }
