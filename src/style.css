@@ -41,3 +41,26 @@ body {
 a {
   color: #161a30;
 }
+.flex-detail {
+  display: flex;
+  position: relative;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.current-temperature {
+  font-size: 50px;
+}
+.current-temperature-emoji {
+  font-size: 50px;
+}
+.units {
+  font-size: 20px;
+  font-weight: 900px;
+  position: relative;
+  bottom: 20px;
+}
+.forecast {
+  display: flex;
+  justify-content: space-between;
+}
