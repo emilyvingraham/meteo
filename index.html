@@ -4,52 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteo App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a city"
-          required
-          autocomplete="off"
-          autofocus="on"
-        />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <h1>Moscow</h1>
-    <span>3°C</span>
-    <span>🌞</span>
-    <div>
-      <p>Moscow, Russian Federation | Long. 37.6174943 Lat. 55.7504461</p>
+    <div class="container">
+      <header>
+        <form class="search-container">
+          <input
+            class="enter-a-city"
+            type="text"
+            placeholder="Enter a city..."
+            required
+            autocomplete="off"
+            autofocus="on"
+          />
+          <input class="search-a-city" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <h1>Moscow</h1>
+        <span>3°C</span>
+        <span>🌞</span>
+        <div>
+          <p>Moscow, Russian Federation | Long. 37.6174943 Lat. 55.7504461</p>
+        </div>
+      </main>
+      <div>
+        <p>Wednesday, 12:34<br />Overcast Clouds</p>
+      </div>
+      <div>
+        <p>Feels Like: 5°C<br />Windspeed: 5 km/h<br />Humidity: 5%</p>
+      </div>
+      <div>
+        <p>Thursday<br />🎮<br /><strong>1°C</strong> 1°C</p>
+        <p>Friday<br />👽<br /><strong>2°C</strong> 2°C</p>
+        <p>Saturday<br />🚀<br /><strong>3°C</strong> 3°C</p>
+        <p>Sunday<br />🔌<br /><strong>4°C</strong> 4°C</p>
+        <p>Monday<br />🌚<br /><strong>5°C</strong> 5°C</p>
+      </div>
+      <footer>
+        Coded by
+        <a href="https://github.com/emilyvingraham" target="_blank"
+          >Emily Ingraham,</a
+        >
+        is
+        <a href="https://github.com/emilyvingraham/meteo" target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://meteo-application-evi.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
     </div>
-    <div>
-      <p>Wednesday, 12:34<br />Overcast Clouds</p>
-    </div>
-    <div>
-      <p>Feels Like: 5°C<br />Windspeed: 5 km/h<br />Humidity: 5%</p>
-    </div>
-    <div>
-      <p>Thursday<br />🎮<br /><strong>1°C</strong> 1°C</p>
-      <p>Friday<br />👽<br /><strong>2°C</strong> 2°C</p>
-      <p>Saturday<br />🚀<br /><strong>3°C</strong> 3°C</p>
-      <p>Sunday<br />🔌<br /><strong>4°C</strong> 4°C</p>
-      <p>Monday<br />🌚<br /><strong>5°C</strong> 5°C</p>
-    </div>
-    <footer>
-      Coded by
-      <a href="https://github.com/emilyvingraham" target="_blank"
-        >Emily Ingraham,</a
-      >
-      is
-      <a href="https://github.com/emilyvingraham/meteo" target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://meteo-application-evi.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
   </body>
 </html>
