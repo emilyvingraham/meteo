@@ -16,9 +16,9 @@ function search(event) {
   event.preventDefault();
   let searchInput = document.querySelector('#enter-a-city');
   searchCity(searchInput.value);
-  //call the API
-  //search for the city
 }
 
 let searchFormElement = document.querySelector('#search-container');
 searchFormElement.addEventListener('submit', search);
+
+searchCity('Lisbon');
