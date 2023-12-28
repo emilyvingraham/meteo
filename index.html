@@ -15,9 +15,10 @@
   <body>
     <div class="container">
       <header>
-        <form class="search-container">
+        <form class="search-container" id="search-container">
           <input
             class="enter-a-city"
+            id="enter-a-city"
             type="text"
             placeholder="Enter a city..."
             required
@@ -29,7 +30,7 @@
       </header>
       <main class="flex-detail">
         <div class="api-driven-city">
-          <h1>Moscow</h1>
+          <h1 id="weather-app-city">Moscow</h1>
           <span class="current-temperature"
             >3<span class="units">°C</span></span
           >
