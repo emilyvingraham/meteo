@@ -1,5 +1,5 @@
 body {
-  background-color: #ecf9ff;
+  background-color: #f1f0e8;
   font-family: 'Roboto', sans-serif;
 }
 .enter-a-city {
@@ -30,7 +30,7 @@ body {
   text-align: center;
 }
 .container {
-  background-color: #b7cadb;
+  background-color: #96b6c5;
   border-radius: 10px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   display: block;
@@ -38,23 +38,29 @@ body {
   padding: 50px;
   width: 75%;
 }
+.api-driven-city {
+  position: relative;
+  left: 20px;
+  bottom: 40px;
+  font-size: 30px;
+}
+.location-detail {
+  text-align: center;
+}
+
 .current-detail-container {
-  background-color: #3c486b;
-  border-radius: 10px;
-  color: #f0f0f0;
-  height: 30%;
-  justify-content: left;
-  padding: 10px;
-  width: 20%;
+  color: #3c486b;
+  font-size: 20px;
 }
 a {
   color: #161a30;
 }
 .flex-detail {
   display: flex;
-  position: relative;
-  padding-top: 10px;
+  margin: 10px 10px 10px 10px;
   justify-content: space-around;
+  width: 86%;
+  padding: 20px;
 }
 
 .current-temperature {
@@ -70,14 +76,25 @@ a {
   bottom: 20px;
 }
 .forecast {
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+  margin: 0 auto;
+}
+.forecast-containers {
   background-color: #3c486b;
   border-radius: 10px;
   color: #f0f0f0;
-  display: flex;
-  justify-content: space-around;
-  width: 86%;
+  padding: 30px;
   text-align: center;
-  margin: 0 auto;
+  width: 10%;
+}
+.forecast-day {
+  padding-bottom: 20px;
+}
+.forecast-emoji {
+  font-size: 30px;
+  padding-bottom: 20px;
 }
 .footer {
   text-align: center;
