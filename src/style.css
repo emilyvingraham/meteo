@@ -51,12 +51,16 @@ body {
 
 .current-detail-container {
   font-size: 16px;
+  position: relative;
+  top: 38px;
 }
 a {
   color: #161a30;
 }
 h1 {
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  position: relative;
+  top: 30px;
 }
 .flex-detail {
   display: flex;
@@ -69,8 +73,11 @@ h1 {
   font-size: 60px;
 }
 .current-temperature-emoji {
-  font-size: 50px;
+  width: 100px;
+  position: relative;
+  top: 30px;
 }
+
 .units {
   font-size: 20px;
   font-weight: 900px;

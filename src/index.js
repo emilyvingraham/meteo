@@ -16,6 +16,9 @@ function update(response) {
   let timeElement = document.querySelector('#time');
   let date = new Date(response.data.time * 1000);
 
+  let iconElement = document.querySelector('#icon');
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-emoji"/>`;
+
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
@@ -24,26 +27,28 @@ function update(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   locationCityElement.innerHTML = `${locationCity}`;
   locationCountryElement.innerHTML = `${locationCountry}`;
-  longitudeElement.innerHTML = response.data.coordinates.longitude;
-  latitudeElement.innerHTML = response.data.coordinates.latitude;
+  longitudeElement.innerHTML = response.data.coordinates.longitude.toFixed(4);
+  latitudeElement.innerHTML = response.data.coordinates.latitude.toFixed(4);
+
   timeElement.innerHTML = formatDate(date);
+  console.log(response.data);
 }
 
 function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
-  let days = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ];
-  let day = days[date.getDay()];
-
-  if (minutes < 10) {
+    let minutes = date.getMinutes();
+    let hours = date.getHours();
+    let days = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+    ];
+    let day = days[date.getDay()];
+    
+    if (minutes < 10) {
     minutes = `0${minutes}`;
   } else {
     minutes;
