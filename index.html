@@ -37,13 +37,22 @@
           <span class="current-temperature-emoji">🌞</span>
         </div>
         <div class="current-detail-container">
-          <p>Wednesday, 12:34<br />Overcast Clouds</p>
-          <p>Feels Like: 5°C<br />Windspeed: 5 km/h<br />Humidity: 5%</p>
+          <p><span id="time"></span> <span id="description"></span></p>
+          <p>
+            Feels Like:
+            <strong class="api-feels-like" id="api-feels-like"></strong
+            ><br />Windspeed:
+            <strong class="api-windspeed" id="api-windspeed"></strong
+            ><br />Humidity:
+            <strong class="api-humidity" id="api-humidity"></strong>
+          </p>
         </div>
       </main>
       <div>
         <p class="location-detail">
-          Moscow, Russian Federation | Long. 37.6174943 Lat. 55.7504461
+          <span id="location-city"></span>,
+          <span id="location-country"></span> | Long.
+          <span id="longitude"></span>, Lat. <span id="latitude"></span>
         </p>
       </div>
       <div class="forecast">

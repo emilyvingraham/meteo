@@ -103,3 +103,13 @@ h1 {
   position: relative;
   top: 20px;
 }
+
+.api-feels-like {
+  color: #204969;
+}
+.api-windspeed {
+  color: #204969;
+}
+.api-humidity {
+  color: #204969;
+}
