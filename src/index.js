@@ -78,22 +78,19 @@ function getForecast(city) {
   let apiKey = '47ce0ocdabaf4a2e81b031bb9t47a0e0';
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   axios(apiUrl).then(displayForecast);
-  
 }
-
-
 
 function displayForecast(response) {
   console.log(response.data);
-  let days = ['Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
   let forecastHtml = '';
 
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `        <div class="row">
     <div class="col-2">
-    <div class="weather-forecast-day">${day}</div>
+    <div class="weather-forecast-day">Tuesday</div>
     <div>
     <img
     src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
@@ -102,8 +99,12 @@ function displayForecast(response) {
     />
     </div>
     <div class="weather-forecast-temperatures">
-    <span class="weather-forecast-temperature-max"> <strong>18°</strong> </span>
-    <span class="weather-forecast-temperature-min"> 12° </span>
+    <span class="weather-forecast-temperature-max"> <strong>${Math.round(
+      day.temperature.maximum
+    )}°</strong> </span>
+    <span class="weather-forecast-temperature-min"> ${Math.round(
+      day.temperature.minimum
+    )}° </span>
     </div>
     </div>
     </div>`;
@@ -112,10 +113,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHtml;
 }
 
-
-
 let searchFormElement = document.querySelector('#search-container');
 searchFormElement.addEventListener('submit', search);
 
 searchCity('Lisbon');
-
